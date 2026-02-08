@@ -1,4 +1,4 @@
-# ⌨️ Redragon K557 Kala - SignalRGB Plugin
+# ⌨️ Redragon K557 Kala V2 - SignalRGB Plugin
 
 [🇧🇷 Português abaixo / Portuguese below]
 
@@ -16,7 +16,7 @@ It addresses common issues found in generic drivers, such as incorrect mapping, 
 
 ## 📦 Installation
 
-1.  Download the `Redragon_K557_Kala.js` file from this repository.
+1.  Download the `Redragon-K557-Kala-V2.js` file from this repository.
 2.  Navigate to your SignalRGB plugins folder in Documents:
     * `C:\Users\YOUR_USER\Documents\WhirlwindFX\Plugins`
 3.  Paste the `.js` file into this folder.
@@ -53,7 +53,7 @@ Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting
 
 ## 📦 Instalação
 
-1.  Baixe o arquivo `Redragon_K557_Kala.js` deste repositório.
+1.  Baixe o arquivo `Redragon-K557-Kala-V2.js` deste repositório.
 2.  Navegue até a pasta de plugins do SignalRGB em seus Documentos:
     * `C:\Users\SEU_USUARIO\Documents\WhirlwindFX\Plugins`
 3.  Cole o arquivo `.js` dentro desta pasta.
@@ -62,7 +62,7 @@ Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting
 
 ## 🔧 Detalhes Técnicos
 
-O controlador do K557 utiliza um protocolo onde os LEDs são endereçados em colunas verticais com saltos de memória. O plugin implementa:
+O controlador do K557 V2 utiliza um protocolo onde os LEDs são endereçados em colunas verticais com saltos de memória. O plugin implementa:
 
 * **Reverse Engineering da Matriz:** Tradução dos IDs lógicos (0-126) para coordenadas cartesianas (X, Y) no Canvas do SignalRGB.
 * **Protocolo USB:** Envio de pacotes de 64 bytes com checksum calculado em tempo real.
