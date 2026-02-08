@@ -1,8 +1,12 @@
 # ⌨️ Redragon K557 Kala V2 - SignalRGB Plugin
 
+<p align="center">
+  <img src="preview3.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
+</p>
+
 [🇧🇷 Português abaixo / Portuguese below]
 
-This repository contains a high-performance JavaScript plugin developed to integrate the **Redragon K557 Kala** mechanical keyboard with **SignalRGB** software.
+This repository contains a high-performance JavaScript plugin developed to integrate the **Redragon K557 Kala V2** mechanical keyboard with **SignalRGB** software.
 
 It addresses common issues found in generic drivers, such as incorrect mapping, LED ghosting, and misplaced Numpad keys.
 
@@ -21,7 +25,7 @@ It addresses common issues found in generic drivers, such as incorrect mapping, 
     * `C:\Users\YOUR_USER\Documents\WhirlwindFX\Plugins`
 3.  Paste the `.js` file into this folder.
 4.  Restart SignalRGB or go to **Devices** and reload plugins.
-5.  The keyboard should appear automatically in the **Devices** tab as "Redragon K557 Kala (Pro Optimized)".
+5.  The keyboard should appear automatically in the **Devices** tab as "Redragon K557 Kala V2".
 
 ## 🔧 Technical Details
 
@@ -35,11 +39,19 @@ The K557 controller uses a specific protocol where LEDs are addressed in vertica
 
 Feel free to open **Issues** if you encounter bugs or want to suggest improvements. The goal is to keep this plugin as lightweight and compatible as possible.
 
+<p align="center">
+  <img src="preview2.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
+</p>
+
 ---
+
+<p align="center">
+  <img src="preview.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
+</p>
 
 # 🇧🇷 Versão em Português
 
-Este repositório contém um plugin (addon) desenvolvido em JavaScript para integrar o teclado mecânico **Redragon K557 Kala** ao software **SignalRGB**.
+Este repositório contém um plugin (addon) desenvolvido em JavaScript para integrar o teclado mecânico **Redragon K557 Kala V2** ao software **SignalRGB**.
 
 Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting" de LEDs e layout incorreto do Numpad que ocorrem com drivers genéricos.
 
@@ -58,7 +70,7 @@ Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting
     * `C:\Users\SEU_USUARIO\Documents\WhirlwindFX\Plugins`
 3.  Cole o arquivo `.js` dentro desta pasta.
 4.  Reinicie o SignalRGB ou vá em **Devices** e recarregue os plugins.
-5.  O teclado deve aparecer automaticamente na aba **Devices** como "Redragon K557 Kala (Pro Optimized)".
+5.  O teclado deve aparecer automaticamente na aba **Devices** como "Redragon K557 Kala V2".
 
 ## 🔧 Detalhes Técnicos
 
