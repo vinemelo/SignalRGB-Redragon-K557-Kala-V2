@@ -72,5 +72,13 @@ O controlador do K557 V2 utiliza um protocolo onde os LEDs são endereçados em 
 
 Sinta-se à vontade para abrir **Issues** se encontrar algum bug ou sugerir melhorias no código. O objetivo é manter este plugin o mais leve e compatível possível.
 
+## ⚖️ License / Licença
+
+**English:**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Português:**
+Este projeto está licenciado sob a Licença MIT - consulte o ficheiro [LICENSE](LICENSE) para mais detalhes.
+
 ---
-*Developed by / Desenvolvido por: vinemelo
+**Developed by / Desenvolvido por:** vinemelo  
