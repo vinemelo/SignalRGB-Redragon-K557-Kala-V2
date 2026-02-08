@@ -1,5 +1,9 @@
 # ⌨️ Redragon K557 Kala V2 - SignalRGB Plugin
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Platform: SignalRGB](https://img.shields.io/badge/Platform-SignalRGB-orange.svg)
+![Status: Stable](https://img.shields.io/badge/Status-Stable-green.svg)
+
 <p align="center">
   <img src="preview3.gif" alt="Redragon K557 Kala SignalRGB Animation" width="600">
 </p>
