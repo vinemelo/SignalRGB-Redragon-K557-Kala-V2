@@ -22,14 +22,24 @@ It addresses common issues found in generic drivers, such as incorrect mapping, 
 * **Visual Layout:** Includes support for displaying the keyboard image within SignalRGB devices tab.
 * **Hybrid Modes:** Supports "Canvas" mode (screen capture effects) and "Forced" mode (static single color).
 
-## 📦 Installation
+## 📦 Automatic Installation (Recommended)
+
+1.  Open SignalRGB.
+2.  Go to Settings > Addons.
+3.  Click the **+ Add-on** button.
+4.  Paste the following URL: `https://github.com/vinemelo/SignalRGB-Redragon-K557-Kala-V2`
+5.  Restart SignalRGB or go to **Devices** and click **Reload Plugins**
+6.  The plugin will be automatically synced and updated.
+7.  The keyboard should appear automatically in the **Devices** tab as **Redragon K557 Kala V2**.
+
+## 📦 Manual Installation
 
 1.  Download the `Redragon-K557-Kala-V2.js` file from this repository.
 2.  Navigate to your SignalRGB plugins folder in Documents:
     * `C:\Users\YOUR_USER\Documents\WhirlwindFX\Plugins`
 3.  Paste the `.js` file into this folder.
-4.  Restart SignalRGB or go to **Devices** and reload plugins.
-5.  The keyboard should appear automatically in the **Devices** tab as "Redragon K557 Kala V2".
+4.  Restart SignalRGB or go to **Devices** and click **Reload plugins**.
+5.  The keyboard should appear automatically in the **Devices** tab as **Redragon K557 Kala V2**.
 
 ## 🔧 Technical Details
 
@@ -67,14 +77,24 @@ Este plugin foi criado para solucionar problemas comuns de mapeamento, "ghosting
 * **Layout Visual:** Inclui suporte para exibição da imagem do teclado dentro do SignalRGB.
 * **Modos Híbridos:** Suporte para modo "Canvas" (efeitos da tela) e modo "Forçado" (cor única estática).
 
-## 📦 Instalação
+## 📦 Instalação Automática (Recomendado)
+
+1.  Abra o SignalRGB.
+2.  Vá em Configurações (Settings) > Addons.   
+3.  Clique no botão **+ Add-on**.
+4.  Cole a seguinte URL: `https://github.com/vinemelo/SignalRGB-Redragon-K557-Kala-V2`
+5.  Reinicie o SignalRGB ou vá em **Dispositivos (Devices)** e clique em **Recarregar Plugins (Reload Plugins)**.
+6.  O plugin será sincronizado e atualizado automaticamente.
+7.  O teclado deve aparecer automaticamente na aba **Dispositivos (Devices)** como **Redragon K557 Kala V2**.
+
+## 📦 Instalação Manual
 
 1.  Baixe o arquivo `Redragon-K557-Kala-V2.js` deste repositório.
-2.  Navegue até a pasta de plugins do SignalRGB em seus Documentos:
-    * `C:\Users\SEU_USUARIO\Documents\WhirlwindFX\Plugins`
+2.  Navegue até a pasta de plugins do SignalRGB em Documentos:
+    * `C:\Users\YOUR_USER\Documents\WhirlwindFX\Plugins`
 3.  Cole o arquivo `.js` dentro desta pasta.
-4.  Reinicie o SignalRGB ou vá em **Devices** e recarregue os plugins.
-5.  O teclado deve aparecer automaticamente na aba **Devices** como "Redragon K557 Kala V2".
+4.  Reinicie o SignalRGB ou vá em **Dispositivos (Devices)** e clique em **Recarregar Plugins (Reload Plugins)**.
+5.  O teclado deve aparecer automaticamente na aba **Dispositivos (Devices)** como **Redragon K557 Kala V2**.
 
 ## 🔧 Detalhes Técnicos
 
