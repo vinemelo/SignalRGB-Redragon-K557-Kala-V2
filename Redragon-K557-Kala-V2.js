@@ -43,7 +43,9 @@ export function Render() {
 	EVISION.sendColors();
 }
 
-export function Shutdown() {}
+export function Shutdown() {
+	EVISION.restoreHardwareMode();
+}
 
 class EVISION_Device_Protocol {
 	constructor() {
@@ -107,6 +109,21 @@ class EVISION_Device_Protocol {
 		}
 	}
 
+	// Inverso do setSoftwareMode: devolve o controle dos LEDs ao firmware do teclado.
+	// Chamado por Shutdown() para evitar que o teclado fique preso em software mode
+	// após reload do plugin, fechamento do SignalRGB ou troca de perfil.
+	// NOTA: o byte final 0x00 (vs 0x01 no setSoftwareMode) é o padrão EVISION para
+	// saída de software mode. Confirme o comportamento no primeiro teste:
+	// os LEDs devem retornar ao efeito de hardware padrão do teclado ao desativar o plugin.
+	restoreHardwareMode() {
+		try {
+			device.write([0x04, 0x8c, 0x00, 0x0b, 0x30, 0x50, 0x00], 64);
+			device.pause(30);
+		} catch (e) {
+			device.log("Erro ao restaurar modo hardware: " + e);
+		}
+	}
+
 	sendColors() {
 		// Throttling: fpsLimit sempre definido após Initialize; || 28 como fallback seguro
 		var targetDelay = 1000 / (fpsLimit || 28);
@@ -116,18 +133,18 @@ class EVISION_Device_Protocol {
 		}
 		this.lastRenderTime = agora;
 
-		var RGBData  = this.RGBData;   // referência local evita this-lookup por LED
+		var RGBData   = this.RGBData;    // referência local evita this-lookup por LED
 		var RenderIdx = this.RenderIdx;
 		var RenderX   = this.RenderX;
 		var RenderY   = this.RenderY;
-		var len       = this.ledCount; // evita .length no objeto por iteração
+		var len       = this.ledCount;   // evita .length no objeto por iteração
 		var i, idx, color;
 
 		if (LightingMode === "Forçado") {
 			// Cache: só recalcula o hex→rgb quando a cor mudar na UI
 			if (forcedColor !== this._lastForcedColor) {
-				this._cachedForcedRgb   = hexToRgb(forcedColor);
-				this._lastForcedColor   = forcedColor;
+				this._cachedForcedRgb = hexToRgb(forcedColor);
+				this._lastForcedColor = forcedColor;
 			}
 			var fr = this._cachedForcedRgb[0];
 			var fg = this._cachedForcedRgb[1];
